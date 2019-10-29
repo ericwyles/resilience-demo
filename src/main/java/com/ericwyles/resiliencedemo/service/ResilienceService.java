@@ -1,6 +1,5 @@
 package com.ericwyles.resiliencedemo.service;
 
-import io.github.resilience4j.bulkhead.Bulkhead;
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 import io.github.resilience4j.decorators.Decorators;
 import io.github.resilience4j.retry.Retry;
@@ -24,7 +23,7 @@ public class ResilienceService {
 
     public String success() {
         log.info("Calling UnreliableService::success");
-        return unreliableService.happy();
+        return unreliableService.success();
     }
 
     public String exceptionNaive() {

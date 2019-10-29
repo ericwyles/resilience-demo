@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UnreliableService {
 
-    public String happy() {
+    public String success() {
         return "This is the success path";
     }
 
